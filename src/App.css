@@ -14,21 +14,27 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   background-color: #61dafb;
-  color: white;
   border: 2px solid white;
   border-radius: 12px;
+}
+
+.App-navbar {
+  list-style-type: none;
+}
+
+.App-navbar li {
+  float: left;
+  padding: 8px;
 }
 
 @keyframes App-logo-spin {
