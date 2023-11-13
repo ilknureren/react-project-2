@@ -20,17 +20,17 @@
 .App-header {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
+/*.App-link {
   background-color: #61dafb;
   border: 2px solid white;
   border-radius: 12px;
-}
+}*/
 
 .App-navbar {
   list-style-type: none;
