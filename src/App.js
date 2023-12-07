@@ -21,7 +21,14 @@ function App() {
           </li>
         </ul>
         </header>
-      <div className="App-body"></div>
+      <div className="App-body">
+        <div className="gallery">
+          <img src="/great_cthulhu.png" alt="Great Cthulhu" />
+        </div>
+        <div className="gallery">
+          <img src="/tesseractive_logo.jpg" alt="Tesseractive Logo" />
+        </div>
+      </div>
       <footer className="App-footer bg-secondary py-3">
         <p className="copyright text-white">&copy; 2023 Peter Dommermuth</p>
       </footer>
