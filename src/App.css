@@ -18,7 +18,6 @@
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,4 +47,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-body {
+  display: flex;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #555;
+  width: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.App-footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
