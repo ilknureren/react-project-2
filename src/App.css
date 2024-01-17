@@ -49,14 +49,16 @@
   }
 }
 
-.App-body {
-  display: flex;
-}
-
-.gallery {
+.gallery-thumbnail {
   margin: 5px;
-  border: 1px solid #555;
-  width: auto;
+  border: 5px groove silver;
+  background-color: black;
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .gallery img {
