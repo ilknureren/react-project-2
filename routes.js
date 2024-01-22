@@ -1,4 +1,5 @@
-import {BrowserRouter as Router, Switch, Route } from ‘react-router-dom’;
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HomePage } from ".pages/home.js"
 import { NotFoundPage } from "./pages/about"
 
 export const Routes = () => {
@@ -6,6 +7,7 @@ export const Routes = () => {
         <Router>
             <Switch>
                 <Route path="/">
+                    <HomePage />
                     <NotFoundPage />
                 </Route>
             </Switch>
