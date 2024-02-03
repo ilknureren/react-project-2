@@ -1,46 +1,32 @@
-import logo from './logo.svg';
-import {Routes} from './routes.js';
 import './App.css';
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 function App() {
+  let Component
+  switch (window.location.pathname){
+    case "/":
+      Component = Home
+      break
+    case "/about":
+      Component = About
+      break
+    case "/contact":
+      Component = Contact
+      break
+  }
+  
   return (
-    <Routes />
-    // <div className="App">
-    //   <header className="App-header bg-light text-dark">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p className="intro mt-2">
-    //       Peter Dommermuth <code class="text-dark">&#8212;</code> Comic Artist
-    //     </p>
-    //     <ul className="App-navbar nav nav-pills ms-5 p-0">
-    //       <li className="nav-item">
-    //         <a class="nav-link active" aria-current="page" href="#">Home</a>
-    //       </li>
-    //       <li className="nav-item">
-    //         <a class="nav-link" href="#">About Me</a>
-    //       </li>
-    //       <li className="nav-item">
-    //         <a class="nav-link" href="#">Contact</a>
-    //       </li>
-    //     </ul>
-    //     </header>
-    //   <div className="App-body">
-    //     <div 
-    //       className="gallery-thumbnail" 
-    //       style={{backgroundImage: "url(great_cthulhu.png)"}}
-    //     >
-          
-    //     </div>
-    //     <div 
-    //       className="gallery-thumbnail"
-    //       style={{backgroundImage: "url(tesseractive_logo.jpg)"}}
-    //     >
-          
-    //     </div>
-    //   </div>
-    //   <footer className="App-footer bg-secondary py-3">
-    //     <p className="copyright text-white">&copy; 2023 Peter Dommermuth</p>
-    //   </footer>
-    // </div>
+    <>
+      <div className="App">
+        <NavBar />
+        <Component />
+        <Footer />
+      </div>
+    </>
   );
 }
 
